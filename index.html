@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    <title>Tarea-4</title>
+</head>
+<body>
+    <header></header>
+
+    <section class="login">
+        <h2>USER LOGIN</h2>
+        <div class="campo1">
+        <input type="text" placeholder="Ingrese su usuario" id="usuario" class="entrada">
+        </div>
+        <div class="campo2">
+        <input type="password" placeholder="Ingrese su contraseña" id="contraseña" class="entrada">
+        <input type="checkbox" id="mostrar-contraseña" onchange="verContraseña()"> 
+        </div>
+        <div class="contenedor-boton">
+        <button class="boton-login" onclick="validarUsuarioContraseña()" id="boton">Ingresar</button>
+        </div>
+        <div class="loader" id="loader"></div>
+        <p id="texto" class="textito"></p>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
