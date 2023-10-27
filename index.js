@@ -12,7 +12,7 @@ if(u==usuario && c==contraseña){
     var texto=document.getElementById("texto");
     texto.innerHTML=exito;
     var x =document.createElement("STYLE");
-    var t =document.createTextNode(".textito{color: green;text-decoration: underline;}.entrada{color:black;text-decoration:none;}")
+    var t =document.createTextNode(".textito{color: green;}.entrada{color:black;text-decoration:none;}.campo1 input{border-color:green;}.campo2 input{border-color:green;}")
     x.appendChild(t);
     document.head.appendChild(x)
 
@@ -21,13 +21,13 @@ if(u==usuario && c==contraseña){
     texto.innerHTML=limpiar;
     if(u==limpiar && c==limpiar){
         var y =document.createElement("STYLE");
-        var z =document.createTextNode(".entrada{color: black;text-decoration: none;}");
+        var z =document.createTextNode(".entrada{color: black;text-decoration: none;}.campo1 input{border-color:transparent;}.campo2 input{border-color:transparent;}");
         y.appendChild(z);
         document.head.appendChild(y)
     }
     else if(u!=usuario || c!=contraseña){
         var y =document.createElement("STYLE");
-        var z =document.createTextNode(".entrada{color: red;text-decoration: underline;}")
+        var z =document.createTextNode(".entrada{color: red;text-decoration: underline;}.campo1 input{border-color:red;}.campo2 input{border-color:red;}")
         y.appendChild(z);
         document.head.appendChild(y)
     }

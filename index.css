@@ -29,12 +29,14 @@ align-items: center;
     font-size: 20px;
     height: 35px;
    padding-left: 10px;
+   border-width: 5px;
 }
 .campo2{
     margin-left: 18px;
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
+    
 }
 .campo2 input{
     border-radius: 10px;
@@ -42,6 +44,7 @@ align-items: center;
     font-size: 20px;
     height: 35px;
     padding-left: 10px;
+    border-width: 5px;
 }
 .contenedor-boton{
     padding-bottom: 20px;
